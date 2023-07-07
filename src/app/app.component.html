@@ -416,9 +416,11 @@
             class="flex"
             style="gap: 8px;">
             <div
-                *ngFor="let color of colors"
+                *ngFor="let color of colors; let i = index"
                 [ngStyle]="{'background-color': color }"
-                [style]="'height: 80px; width: 80px;'"></div>
+                class="color-item">
+                <label [ngStyle]="{color: i < 5? 'black' : 'white'}">{{color}}</label>
+            </div>
         </div>
     </div>
 
@@ -436,6 +438,11 @@
 
     <div class="terminal">
         <pre>
+            
+            
+            
+            
+            
             
             
             

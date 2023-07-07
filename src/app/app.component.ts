@@ -7,7 +7,7 @@ import { generate, presetPalettes } from '@ant-design/colors';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'aaaa';
+  title = 'Ant Design Colors';
   colors: string[] = [];
   snippet = `
   import { generate, presetPalettes } from '@ant-design/colors';
