@@ -16,9 +16,9 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "ES5",
+    "target": "ES2017",
     "module": "ES2015",
-    "lib": ["ES2022", "ES2015", "ES5", "dom"]
+    "lib": ["ES2022", "ES2017", "ES5", "dom"]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
