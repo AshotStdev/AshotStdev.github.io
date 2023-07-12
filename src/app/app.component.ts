@@ -9,6 +9,7 @@ import { generate, presetPalettes } from '@ant-design/colors';
 export class AppComponent {
   title = 'Ant Design Colors';
   colors: string[] = [];
+  value = '#1890ff';
   snippet = `
   import { generate, presetPalettes } from '@ant-design/colors';
   
@@ -16,12 +17,18 @@ export class AppComponent {
   const colors = generate('#1890ff');
   `;
   constructor() {
-    const colors = generate('#1890ff');
-    console.log(colors); // ['#E6F7FF', '#BAE7FF', '#91D5FF', ''#69C0FF', '#40A9FF', '#1890FF', '#096DD9', '#0050B3', '#003A8C', '#002766']
-    console.log(presetPalettes);
+    this.colors = generate('#1890ff', {
+      theme: 'default',
+      backgroundColor: '#ffffffff',
+    });
   }
 
   setColor(event: any) {
-    this.colors = generate(event.target.value);
+    console.log(event);
+
+    this.colors = generate(event.target.value, {
+      theme: 'dark',
+      backgroundColor: '#0000000000',
+    });
   }
 }
