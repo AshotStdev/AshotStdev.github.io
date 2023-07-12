@@ -24,8 +24,6 @@ export class AppComponent {
   }
 
   setColor(event: any) {
-    console.log(event);
-
     this.colors = generate(event.target.value, {
       theme: 'dark',
       backgroundColor: '#0000000000',
